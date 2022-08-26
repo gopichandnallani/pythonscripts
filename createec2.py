@@ -22,4 +22,3 @@ instance = ec2.create_instances(
     MaxCount=1,
     TagSpecifications=Tags
 )
-
