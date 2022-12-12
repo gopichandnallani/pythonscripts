@@ -1,13 +1,19 @@
-import csv  
+import csv
 
 header = ['name', 'area', 'country_code2', 'country_code3']
-data = ['Afghanistan', 652090, 'AF', 'AFG']
+data = [
+    ['Albania', 28748, 'AL', 'ALB'],
+    ['Gopichand', 2381741, 'BC', 'Vancouver'],
+    ['American Samoa', 199, 'AS', 'ASM'],
+    ['Andorra', 468, 'AD', 'AND'],
+    ['Angola', 1246700, 'AO', 'AGO']
+]
 
-with open('countries.csv', 'w', encoding='UTF8') as f:
+with open('countries.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f)
 
     # write the header
     writer.writerow(header)
 
-    # write the data
-    writer.writerow(data)
+    # write multiple rows
+    writer.writerows(data)
