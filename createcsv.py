@@ -13,7 +13,7 @@ with open('countries.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f)
 
     # write the header
-    writer.writerow(header)
+    # writer.writerow(header)
 
     # write multiple rows
     writer.writerows(data)
